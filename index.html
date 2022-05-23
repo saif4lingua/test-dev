@@ -1,7 +1,21 @@
-<script>
-    document.getElementById("now").innerHTML = Date();
-</script>
-<div>
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+<div> 
     <h1>Weltweisheit</h1>
     <h2 id="now"></h2>
+
 </div>
+<script> 
+  date = new Date();
+  year = date.getFullYear();
+  month = date.getMonth() + 1;
+  day = date.getDate();
+  document.getElementById("now").innerHTML = "今天是" + year +"年" + month + "月" + day + "日";
+
+</script>
+</body>
+</html>
