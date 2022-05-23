@@ -1,0 +1,23 @@
+header {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 20px;
+  border: 1px solid rgb(201, 201, 201);
+}
+#header-content {
+  padding-left: 20px;
+}
+#hc1 {
+  margin-bottom: -11px;
+  font-size: 90%;
+  } 
+#hc2 {
+  font-size: 90%;
+}
+main {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 15px;
+  border: 1px solid rgb(201, 201, 201);
+}
+
