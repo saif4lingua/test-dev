@@ -1,24 +1,87 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8" />
 <title>逻辑学、数学、计算科学、语言学和哲学——关于形式科学的思考</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/main.css"/>
-
+<link rel="icon" href="image/LSS_sothink_logo.png"/>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    background-color: #f8f8fa;
+  }
+  header {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+    border: 1px solid rgb(201, 201, 201);
+    background-image: url(images/header-bg1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #header-content {
+    padding-left: 20px;
+    font-weight: bold;
+    color: darkblue;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  #hc1 {
+    font-size: 200%;   
+  }
+  #hc2 {
+    font-size: 170%;
+    background-color: #green;
+  }
+  main.container {
+    margin: 15px 50px 0 50px;
+/*    border: 1px solid rgb(201, 201, 201);*/
+  }
+  section.panel {
+    float: left;
+    border: 1px solid rgb(201, 201, 201);
+    box-sizing: border-box;
+    height: 360px;
+  }
+  section#left-panel {
+    margin-right: 16px;
+  }
+  div.message {
+    padding-left: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+    border-bottom: 1px solid rgb(201, 201, 201);
+    background-color: rgb(233, 233, 233);
+    color: darkblue;
+    font-weight: bold;
+    font-size: 120%;
+  }
+  #left-panel {
+    width: 23.5%;
+  }
+  #right-panel {
+    width: 75%;
+  }
+</style>
 </head>
 <body>
-<header>
-    <div id="header-content">
-        <p id="hc1">赛义甫的个人博客</p>
-        <p id="hc2">逻辑学、数学、计算科学、语言学和哲学——关于形式科学的思考</p>
+<header>  
+  <div id="header-content">
+    <p id="hc1">赛义甫的个人博客</p>
+    <span id="hc2">逻辑学、数学、计算科学、语言学和哲学——关于形式科学的思考</span>
   </div>
 </header>
-<main>
-<div>
-    <h1>Weltweisheit</h1>
-    <h2 id="now"></h2>
-
-</div>
+<main class="container">
+  <section class="panel" id="left-panel">
+    <div class="message">公告</div>
+  </section>  
+  <section class="panel" id="right-panel">
+    <div class="message" id="now"></div>
+  </section>
 </main>
 <script src="script/main.js"></script>
 </body>
