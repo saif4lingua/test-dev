@@ -4,146 +4,26 @@
 <title>逻辑学、数学、计算科学、语言学和哲学——关于形式科学的思考</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/main.css"/>
+<link rel="stylesheet" href="style/main.css"/>
+<link rel="stylesheet" href="style/header.css"/>
 <link rel="icon" href="images/LSS_sothink_logo.png"/>
-<style>
-  * {
-    box-sizing: border-box;
-  }
-  body {
-    background-color: #f8f8fa;
-    font-family: SimSun;
-  }
-  header {
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 20px;
-    border: 1px solid rgb(201, 201, 201);
-    background-image: url(images/header-bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  #header-content {
-    padding-left: 20px;
-    font-weight: bold;
-    color: darkblue;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  #hc1 {
-    font-size: 200%;   
-    margin-top: 12px;
-    margin-bottom: 4px;
-  }
-  #hc2 {
-    font-size: 100%;
-    background-color: #green;
-  }
-  main.container {
-    margin: 15px 50px 0 50px;
-  }
-  section.panel {
-    float: left;
-    border: 1px solid rgb(201, 201, 201);
-    box-sizing: border-box;
-    height: auto; 
-  }
-  section#left-panel {
-    margin-right: 16px;
-  }
-  div.section-title {
-    padding-left: 15px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    text-align: left;
-    border-bottom: 1px solid rgb(201, 201, 201);
-    background-color: rgb(233, 233, 233);
-    color: darkblue;
-    font-weight: bold;
-  }
-  #left-panel {
-    width: 23%;
-    background-color: linen;
-  }
-  #right-panel {
-    width: 75%;
-  }
-  .navbar {
-    overflow: hidden;
-    margin-top: -12px;
-  }
-  .navbar a {
-    float: left;
-    display: block;
-    text-align: center;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-size: 110%;
-    font-weight: bold;
-    color: darkblue;
-  }
-  .navbar a:hover {
-    background-color: lightskyblue;
-    color: darkblue;
-  }
-  .image: {
-    background-image url(images/proj-icon.jpg);
-  }
-  div.articles {
-    margin-left: 20px;
-  }
-  div.article {
-    border-bottom: 1px solid rgb(201,201,201);
-    font-size: 90%;
-  }
-  div.article p a {
-    text-decoration: none;
-  }
-  div.article p a:hover {
-    text-decoration: underline;
-  }
-  #pinfo {
-    margin-left: 10px;
-    margin-right: 10px;
-    font-size: 90%;
-  }
-  ol {
-    padding-left: 15px;
-  }
-  ul {
-    padding-left: 15px;
-  }
-  #now {
-    font-size: 60%;
-    color: #0000ff;  
-    padding-left: 0.4%;
-  }
-</style>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script>
+  $(function() {
+    $("header").load("html/header.html");
+  });
+</script>
+
 </head>
 <body>
-<header>
-  <div id="now"></div>
-  <div id="header-content">
-    <p id="hc1">赛义甫的个人博客</p>
-    <span id="hc2">逻辑学、数学、计算科学、语言学和哲学——关于形式科学的思考</span>
-  </div>
-  <div class="navbar">
-    <a href="/math/">数学</a>
-    <a href="/logic">逻辑学</a>
-    <a href="/computation">计算科学</a>
-    <a href="linguistics">语言学</a>
-    <a href="philosophy">哲学</a>
-    <a href="reference">文献</a>
-    <a href="reference">项目</a>
-  </nav>
-</header>
+<header></header>
 <main class="container">
   <section class="panel" id="left-panel">
     <div class="section-title">个人介绍</div>
     <div id="pinfo">
       <p>兴趣范围包括下列几个方面：</p>
       <p>中心兴趣在语言学、逻辑和计算的接口，特别是以类型逻辑语法为基础的动态语义学研究</p>
-      <ol>
+      <ul>
         <li>熟悉的形式语法理论：范畴语法、P&amp;P、HPSG、LFG</li>
         <li>感兴趣的其他语言学理论：
         <ul>
@@ -166,7 +46,7 @@
     <div class="section-title" >新文章</div>
     <div class="articles">
       <div class="article">
-        <p><a href="#">再谈《文科背景的语言学僧能否学习计算语言学》</a>&nbsp;<span>2020-03-10 08:02:27</span>&nbsp;<span id="pub-date">current date</span></p>
+        <p><a href="html/douban-group-20200310080227-post.html">再谈《文科背景的语言学僧能否学习计算语言学》</a>&nbsp;<span>2020-03-10 08:02:27</span>&nbsp;<span id="pub-date">current date</span></p>
         <p>「本篇文章被豆瓣封禁」时光荏苒、白驹过隙，离《文科背景的语言学僧能否学习计算语言学》已经过了6年有余。计算语言学、或者更正确的名称，<span>...</span></p>
       </div>
       <div class="article">
@@ -216,6 +96,5 @@
     </div>
   </section>
 </main>
-<script src="script/main.js"></script>
 </body>
 </html>
