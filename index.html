@@ -4,7 +4,7 @@
 <title>逻辑学、数学、计算科学、语言学和哲学——关于形式科学的思考</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="style/main.css"/>
+<!--<link rel="stylesheet" href="style/main.css"/> -->
 <link rel="stylesheet" href="style/header.css"/>
 <link rel="icon" href="images/LSS_sothink_logo.png"/>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -13,7 +13,59 @@
     $("header").load("html/header.html");
   });
 </script>
-
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    background-color: #f8f8fa;
+    font-family: SimSun;
+  }
+  main.container {
+    margin: 15px 50px 0 50px;
+  }
+  section.panel {
+    float: left;
+    border: 1px solid rgb(201, 201, 201);
+    box-sizing: border-box;
+    height: auto; 
+  }
+  div.section-title {
+    padding-left: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: left;
+    border-bottom: 1px solid rgb(201, 201, 201);
+    background-color: rgb(233, 233, 233);
+    color: darkblue;
+    font-weight: bold;
+  }
+  #left-panel {
+    width: 23%;
+    background-color: linen;
+    margin-right: 16px;
+  }
+  #right-panel {
+    width: 75%;
+  }
+  div.articles {
+    margin-left: 20px;
+  }
+  div.article {
+    border-bottom: 1px solid rgb(201,201,201);
+  }
+  #pinfo {
+    margin-left: 20px;
+    padding-right: 10px;
+  }
+  #pinfo ul {
+    padding-left: 12px;
+  }
+ p a {
+    text-decoration: none;
+    color: darkblue;
+  } 
+</style>
 </head>
 <body>
 <header></header>
